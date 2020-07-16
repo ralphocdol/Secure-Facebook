@@ -16,14 +16,9 @@
         location.replace(`https://secure.facebook.com${location.pathname}${location.search}`);
     } else {
         let thisLink;
-        const links = document.evaluate("//a[@href]",
-                                        document,
-                                        null,
-                                        XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE,
-                                        null);
+        const links = document.evaluate("//a[@href]", document, null, XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE, null);
         links.map((link, index) => {
             thisLink = link.snapshotItem(index);
-
             thisLink.href = thisLink.href.replace('https://www.facebook.com/', 'https://secure.facebook.com/');
         });
     }
