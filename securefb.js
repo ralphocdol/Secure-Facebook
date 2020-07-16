@@ -2,6 +2,7 @@
 // @name         Secure Facebook
 // @namespace    https://www.facebook.com/*
 // @include      https://*.facebook.com/*
+// @exclude      https://*.facebook.com/messages/*
 // @run-at       document-start
 // @version      1.0
 // @description  Automatically redirect www.facebook.com to secure.facebook.com
