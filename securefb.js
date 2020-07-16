@@ -3,7 +3,7 @@
 // @namespace    https://www.facebook.com/*
 // @include      https://www.facebook.com/*
 // @run-at       document-start
-// @version      0.1
+// @version      0.2
 // @description  Automatically redirect www.facebook.com to secure.facebook.com
 // @author       Ralph Ocdol
 // @grant        none
